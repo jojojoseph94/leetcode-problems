@@ -39,7 +39,7 @@ My solution 2 : sliding window; Keep a sliding window, with it length and doctio
                 If it is, slide the window to the location after the previous occurance 
                 of that character in the window, update the length as well
 Time complexity : O(N)
-Space complexity : O(N)
+Space complexity : O(1) -> letters stored will be 26/256 only
 """
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
