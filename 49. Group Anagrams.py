@@ -46,7 +46,9 @@ class Solution(object):
         return ans
 
 """
-Optimized solution1 - By sorting the words
+Optimized soln : O(NxMlog(M)): For every word, sort it. Then check if it is in ans dictionary
+                    Sorting takes Mlog(M) and you have to do the same for N words in the given input
+
 """
 class Solution(object):
     def groupAnagrams(self, strs):
@@ -65,8 +67,4 @@ class Solution(object):
         ret = []
         for key in ans.keys():
             ret.append(ans[key])
-        return ret
-                
-        
-                
-        
+        return ret       

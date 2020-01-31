@@ -25,7 +25,10 @@ class Solution(object):
         return ans
 
 """
-Solution2 : 
+Solution2 : Using hashset + same countig technique
+When 0, decrement count
+when 1, increment count
+if count is in hashset, 
 """
 class Solution(object):
     def findMaxLength(self, nums):
